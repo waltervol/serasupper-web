@@ -11,6 +11,7 @@ export in the app repo is a convenience copy only — edit the policy *here* fir
 - `/` — landing placeholder (`index.html`)
 - `/privacy/` — Privacy Policy (App Store Connect Privacy Policy URL)
 - `/support/` — Support + FAQ (App Store Connect Support URL)
+- `/disclaimer/` — Disclaimer (food safety, allergens, AI content, nutrition estimates); linked in-app under Settings → Legal
 - `404.html`, `robots.txt`, `sitemap.xml`, `favicon.svg`
 
 ## Local preview
