@@ -3,40 +3,182 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SeraSupper</title>
-  <meta name="description" content="SeraSupper — a meal planning app for iOS. Build a dish library, plan your week, and generate grocery lists.">
+  <title>SeraSupper — AI meal plans &amp; grocery lists for iPhone and iPad</title>
+  <meta name="description" content="A week of dinners and the shopping list to match, in about a minute. Recipes written on your iPhone. No account, no subscription, no data collected.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="stylesheet" href="/style.css">
+
+  <!-- Link previews (iMessage, Slack, social) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SeraSupper">
+  <meta property="og:title" content="SeraSupper — AI meal plans &amp; grocery lists">
+  <meta property="og:description" content="A week of dinners and the shopping list to match, in about a minute. Recipes written on your iPhone. No account, no subscription.">
+  <meta property="og:image" content="https://serasupper.com/assets/share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://serasupper.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SeraSupper — AI meal plans &amp; grocery lists">
+  <meta name="twitter:description" content="A week of dinners and the shopping list to match, in about a minute. Recipes written on your iPhone.">
+  <meta name="twitter:image" content="https://serasupper.com/assets/share.png">
+
+  <!-- RELEASE DAY: uncomment and fill in the numeric Apple ID from
+       App Store Connect → App Information → General Information.
+       Safari on iPhone then shows a native install banner at the top of the page.
+  <meta name="apple-itunes-app" content="app-id=APPLE_ID">
+  -->
 </head>
 <body>
   <header class="site-header">
-    <img class="mark" src="/favicon.svg" alt="" width="28" height="28">
+    <img class="mark app-icon" src="/assets/icon-256.png" alt="" width="32" height="32">
     <a href="/" class="brand">SeraSupper</a>
+    <nav class="site-nav">
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+      <a href="/support/">Support</a>
+    </nav>
   </header>
 
-  <main class="wrap">
-    <p class="eyebrow">Meal planning for iOS</p>
-    <h1>Plan the week. Skip the “what’s for dinner?”</h1>
-    <p class="subtitle">
-      SeraSupper helps you build a personal dish library, plan meals on a calendar,
-      and turn them into a grocery list — with on-device AI for recipe ideas. Your
-      data stays on your device and your private iCloud account.
-    </p>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <img class="hero-icon app-icon" src="/assets/icon-256.png" alt="SeraSupper app icon" width="88" height="88">
+        <p class="eyebrow">Meal planning for iPhone and iPad</p>
+        <h1>Plan the week. Skip the “what’s for dinner?”</h1>
+        <p class="subtitle">
+          SeraSupper learns what you actually like to eat, then does the tedious
+          parts: suggesting dishes, writing the recipes, filling the calendar, and
+          building the shopping list. Recipes are written on your phone — no
+          server, no account, no subscription.
+        </p>
 
-    <p>
-      <a class="btn" href="/support/">Support</a>
-      <a class="btn secondary" href="/privacy/">Privacy Policy</a>
-      <a class="btn secondary" href="/disclaimer/">Disclaimer</a>
-    </p>
+        <p class="cta-row">
+          <!-- RELEASE DAY: replace the beta button with Apple's badge.
+               Download the official artwork from
+               https://developer.apple.com/app-store/marketing/guidelines/
+               and link it to https://apps.apple.com/app/idAPPLE_ID
+          <a class="badge" href="https://apps.apple.com/app/idAPPLE_ID">
+            <img src="/assets/app-store-badge.svg" alt="Download on the App Store" width="160" height="53">
+          </a>
+          -->
+          <a class="btn" href="https://testflight.apple.com/join/AGVapmKG">Join the beta on TestFlight</a>
+          <a class="btn secondary" href="#preview">Watch the preview</a>
+        </p>
 
-    <div class="card">
-      <h2 style="margin-top:0">About the app</h2>
-      <p>
-        SeraSupper is developed and published by Harper Advanced Technologies.
-        It’s currently in beta. There are no accounts, no ads, and no tracking —
-        the app has no servers of its own.
-      </p>
-    </div>
+        <p class="trust">
+          <strong>Data Not Collected</strong> on the App Store privacy label.
+          Your meals and recipes live on your device and in your own iCloud.
+          $4.99 once — no subscription, no ads.
+        </p>
+      </div>
+
+      <figure class="hero-shot">
+        <img src="/assets/hero-calendar.png" alt="SeraSupper's calendar showing a full week of planned meals" width="332" height="720">
+      </figure>
+    </section>
+
+    <section id="features" class="wrap features">
+      <h2 class="section-title">Three things it does that others don’t</h2>
+
+      <article class="feature">
+        <img src="/assets/feature-dash.png" alt="The Dinner Dash setup screen: pick the meal, the week, and a theme for each night" width="295" height="640" loading="lazy">
+        <div>
+          <h3>Dinner Dash: a week of dinners in about a minute</h3>
+          <p>
+            Standing in the store with no plan? Pick the meal and the week, and
+            SeraSupper fills every night with something you’d actually eat, then
+            builds the shopping list before you reach the checkout. Don’t like
+            Thursday? One tap swaps it for the next-best idea.
+          </p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <img src="/assets/feature-recipe.png" alt="An AI-generated recipe for Chicken Teriyaki Bowl with ingredients, timing and nutrition" width="295" height="640" loading="lazy">
+        <div>
+          <h3>Recipes written on your device</h3>
+          <p>
+            Need a recipe for a dish? SeraSupper writes one using Apple
+            Intelligence, right on your phone — ingredients, steps and servings.
+            Nothing leaves the device. Prefer a trusted site? Search the web inside
+            the app and save the recipe to your library.
+          </p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <img src="/assets/feature-grocery.png" alt="A grocery list generated from the week's meal plan, grouped by section" width="295" height="640" loading="lazy">
+        <div>
+          <h3>One grocery list from the whole plan</h3>
+          <p>
+            Every planned meal rolls up into a single list, duplicates merged and
+            the staples you already have subtracted. Your pantry and your list sit
+            side by side, so checking something off in the store keeps both honest.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="preview" class="wrap preview">
+      <h2 class="section-title">See it in 25 seconds</h2>
+      <video controls playsinline preload="none" poster="/assets/preview-poster.png" width="443" height="960">
+        <source src="/assets/preview.mp4" type="video/mp4">
+        Your browser can’t play this video. <a href="/assets/preview.mp4">Download it instead.</a>
+      </video>
+    </section>
+
+    <section id="faq" class="wrap faq">
+      <h2 class="section-title">Questions people ask before buying</h2>
+
+      <dl>
+        <dt>Which devices does it run on?</dt>
+        <dd>iPhone and iPad running iOS 26.2 or later.</dd>
+
+        <dt>Do I need Apple Intelligence?</dt>
+        <dd>
+          Only for the AI features: writing recipes and importing ingredients
+          from web recipes. Everything else — the dish library, calendar, Dinner
+          Dash, grocery lists, sync — works on any supported device. Apple Intelligence needs an iPhone 15 Pro or newer,
+          or a recent iPad, with it turned on in Settings.
+        </dd>
+
+        <dt>Is it a subscription?</dt>
+        <dd>No. $4.99, once. No in-app purchases.</dd>
+
+        <dt>Where is my data?</dt>
+        <dd>
+          On your device and in your own iCloud account. SeraSupper has no servers
+          and no accounts, and the developer cannot see anything you enter. The
+          App Store privacy label reads “Data Not Collected” because there is
+          nothing to collect.
+        </dd>
+
+        <dt>Does it sync between my iPhone and iPad?</dt>
+        <dd>Yes, through iCloud, automatically.</dd>
+
+        <dt>Can I try it before it’s on the App Store?</dt>
+        <dd>
+          Yes — the public beta is open on
+          <a href="https://testflight.apple.com/join/AGVapmKG">TestFlight</a>.
+          Feedback goes to <a href="mailto:support@harpertech.net">support@harpertech.net</a>.
+        </dd>
+      </dl>
+    </section>
+
+    <section class="wrap">
+      <div class="card">
+        <h2 style="margin-top:0">About the app</h2>
+        <p>
+          SeraSupper is developed and published by Harper Advanced Technologies in
+          Indianapolis. It’s in public beta ahead of its App Store release. There
+          are no accounts, no ads, and no tracking — the app has no servers of
+          its own. Read the <a href="/privacy/">privacy policy</a> and the
+          <a href="/disclaimer/">disclaimer</a> on food safety and AI-generated
+          content.
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
