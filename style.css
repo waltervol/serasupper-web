@@ -211,3 +211,9 @@ li { margin: 0.35rem 0; }
   .feature:nth-child(odd) img { order: 0; }
   .feature img { max-width: 220px; margin: 0 auto; }
 }
+
+/* App icon: iOS masks its corners at ~22% of the side; match that on the web */
+.app-icon { border-radius: 22.5%; display: block; }
+.site-header .mark.app-icon { width: 2rem; height: 2rem; box-shadow: 0 1px 3px rgba(43,43,43,0.18); }
+.hero-icon { width: 88px; height: 88px; margin: 0 0 1.1rem; box-shadow: 0 6px 18px rgba(43,43,43,0.16); }
+@media (max-width: 760px) { .hero-icon { width: 72px; height: 72px; } }
