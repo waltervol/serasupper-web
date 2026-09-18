@@ -173,7 +173,7 @@ li { margin: 0.35rem 0; }
   box-shadow: 0 18px 50px rgba(43, 43, 43, 0.14);
   background: var(--surface);
 }
-.hero-shot img { max-width: 332px; margin: 0 auto; }
+.hero-shot img { max-width: 400px; margin: 0 auto; }
 
 .section-title {
   font-size: 1.6rem;
@@ -206,10 +206,13 @@ li { margin: 0.35rem 0; }
 @media (max-width: 760px) {
   .hero { grid-template-columns: 1fr; gap: 1.75rem; }
   .hero h1 { font-size: 2rem; }
-  .hero-shot img { max-width: 260px; }
-  .feature, .feature:nth-child(odd) { grid-template-columns: 1fr; gap: 1.25rem; }
+  .hero-shot img { max-width: 320px; }
+  /* Keep the screenshot beside its text on phones: stacked, the pairing
+     wasn't obvious (feedback 2026-09-17). */
+  .feature, .feature:nth-child(odd) { grid-template-columns: 104px minmax(0, 1fr); gap: 1rem; align-items: start; }
   .feature:nth-child(odd) img { order: 0; }
-  .feature img { max-width: 220px; margin: 0 auto; }
+  .feature img { max-width: 104px; border-radius: 12px; }
+  .feature h3 { font-size: 1.15rem; }
 }
 
 /* App icon: iOS masks its corners at ~22% of the side; match that on the web */
